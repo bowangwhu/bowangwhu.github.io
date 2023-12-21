@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="always">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+<title>散文 - 博博士爱易学</title>
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="icon" href="/logo/logo.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+<div>
+    <h1><a href="">博博士爱易学</a></h1>
+  </div>
+  <nav><a href="/">文章</a><a href="/publications/">发表</a><a href="/tags/">标签</a><a href="/about/">关于</a><div class="search">
+  <script>
+  function check_search() {
+    var s = document.getElementById('_display_keyword').value;
+    s = s.replace(/(^\s*)|(\s*$)/g, '');
+    if (s == '' || s == undefined || s == null) {
+      document.getElementById('_display_keyword').focus();
+      return false;
+    }
+    document.getElementById('q').value = s + " site:";
+    return true;
+  }
+</script>
+<form class="search" action="https://www.google.com/search" target="_blank" onsubmit="return check_search()">
+  <input id="_display_keyword" type="text" placeholder="Search.." name="keyword">
+  <input id="q" type="hidden" name="q">
+  <button type="submit"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:20px;height:20px;color:#333">
+      <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+    </svg></button>
+</form>
+</div>
+
+  </nav>
+</header>
+
+<main>
+  <article>
+    <div>
+  <h1>散文</h1>
+</div>
+<ul>
+  <li>2023-11-13 18:00 - <a href="/2023/11/13/windows-set-hugo-blog-%E8%8B%A5%E6%97%A0%E5%85%B6%E4%BA%8B%E7%A9%BF%E8%BF%87%E5%8D%8A%E4%B8%AA%E5%9F%8E%E5%B8%82/">若无其事，穿过半个城市</a></li>
+  </ul>
+
+  </article>
+</main>
+
+<footer>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+  <div style="display: inline;" id="poem_sentence"></div> —— <div style="display: inline;" id="poem_info"></div>
+  <script type="text/javascript">
+  jinrishici.load(function(result) {
+    var sentence = document.querySelector("#poem_sentence")
+    var info = document.querySelector("#poem_info")
+    sentence.innerHTML = result.data.content
+    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+    });
+</script>
+  <div>
+    <div>
+      Copyright @ 2023 <a href="https://bowangwhu.github.io">Bo Wang</a> All Rights Reserved</div>
+  </div>
+</footer>
+<script>
+window.onload = function() {
+    var links = document.getElementsByTagName('a');
+    for (var i in links) {
+        if (links[i].nodeType != 1) continue;
+        if (links[i].hostname != '' && links[i].hostname != window.location.hostname) {
+            links[i].className += 'external';
+            links[i].setAttribute('target', '_blank');
+        }
+    }
+}
+</script>
+
+</body>
+</html>
