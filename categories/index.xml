@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 博博士爱易学</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on 博博士爱易学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright @ 2023 [Bo Wang](https://bowangwhu.github.io) All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 13 Nov 2023 18:00:00 +0800</lastBuildDate>
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>散文</title>
+      <link>/categories/%E6%95%A3%E6%96%87/</link>
+      <pubDate>Mon, 13 Nov 2023 18:00:00 +0800</pubDate>
+      <guid>/categories/%E6%95%A3%E6%96%87/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
